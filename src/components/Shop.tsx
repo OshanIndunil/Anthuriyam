@@ -156,7 +156,7 @@ const Shop = ({ onBack }: ShopProps) => {
 
         {/* Product Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredPlants.map((plant) => (
+           {filteredPlants.map((plant) => (
             <div 
               key={plant.id} 
               className="bg-gradient-to-br from-white to-green-50 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-green-200 hover:border-yellow-500"
