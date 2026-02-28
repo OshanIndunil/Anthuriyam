@@ -92,10 +92,10 @@ const Shop = ({ onBack }: ShopProps) => {
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
-              <span className="font-bold">Back to Home</span>
+              <span className="font-bold hidden sm:inline">Back to Home</span>
             </button>
             
-            <h1 className="text-2xl md:text-3xl font-bold text-white">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white absolute left-1/2 transform -translate-x-1/2">
               🌿 Shop Our Plants
             </h1>
             

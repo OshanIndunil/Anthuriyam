@@ -8,22 +8,22 @@ const AboutUs = ({ onBack }: AboutUsProps) => {
       {/* Header */}
       <div className="bg-[#0a1f14] shadow-md sticky top-0 z-40 border-b-2 border-yellow-500">
         <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between relative">
             <button 
               onClick={onBack}
-              className="flex items-center gap-2 text-white hover:text-yellow-400 transition-colors"
+              className="flex items-center gap-2 text-white hover:text-yellow-400 transition-colors z-10"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
-              <span className="font-bold">Back to Home</span>
+              <span className="font-bold hidden sm:inline">Back to Home</span>
             </button>
             
-            <h1 className="text-2xl md:text-3xl font-bold text-white">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white absolute left-1/2 transform -translate-x-1/2">
               🌺 About Us
             </h1>
             
-            <div className="w-24"></div>
+            <div className="w-6"></div>
           </div>
         </div>
       </div>
